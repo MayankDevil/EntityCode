@@ -36,7 +36,7 @@
 
 ![Alt text](./data/EntityCode.png "HomePage")
 
-### Responsive
+## Responsive
 
 **Breakpoints** { 375 | 576 | 768 | 992 }
 

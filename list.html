@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+	Mayank All Right Rserved
+	Website 8 "Entity Codes"
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mayank</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+        <!-- script display file -->
+		<script src="js/script.js"></script>
+		<!-- webpage mother container  -->
+        <main>
+             <!--
+				header section --------------------------------------------
+			-->
+            <div id="header">
+
+                <div>
+                
+                    <h3> Search New Entity Code </h3>
+
+                    <a href="index.html" class="back_btn"> &#10097; </a>
+                
+                </div>
+
+                <button class="btn" id="search"> click to search new entity </button>
+
+
+            </div>
+            <!--
+                content section ---------------------------------------------
+            -->
+            <div id="more_code">
+
+                <script>
+                    /*
+                        -----------------
+                        | LIST FUNCTION |
+                        -----------------
+                    */
+                    try
+                    {
+                        let element = document.getElementById("more_code");
+
+                        var n = 32;
+                        
+                        for(let i = n; i < n + 100; i++)
+                            document.write("<div> &#"+i+"; </div> <div>"+i+"</div>");
+                        
+                        document.getElementById('search').onclick = () =>
+                        {
+                            n = parseInt(prompt("Enter Number of entity = "));
+                            
+                            element.innerHTML = "";
+
+                            for(let i = n; i < n + 200; i++)
+                                element.insertAdjacentHTML("afterbegin","<div> &#"+i+"; </div> <div>"+i+"</div>");
+                        }                        
+                    }
+                    catch(error)
+                    {
+                        console.error(alert(error));
+                    }
+                    // code end
+                </script>
+
+            </div>
+            <!--
+				footer section --------------------------------------------
+			-->
+			<footer>
+
+				CopyRight &copy; | Designed By <a href="https://mastermayank.w3spaces.com"> Mayank </a>
+
+			</footer>
+
+        </main>
+
+</body>
+</html>

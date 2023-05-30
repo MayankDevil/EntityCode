@@ -1,0 +1,407 @@
+/*
+-	website-8 "Entity Code"
+-	CopyRight Mayank All Right Rserved 
+-	Developed and Desgin by Mayank
+-	CSS : css/style
+*/
+*
+{
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+:root
+{
+	--black:#222f3e;
+	--gray:#7f8fa6;
+	--yellow:#feca57;
+	--orange:#ff9f43;
+	--white:#ecf0f1;
+	--light:#fff;
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+	background:var(--orange);
+	border-radius: 10px;
+}
+::marker
+{
+	color:black;
+}
+/*
+	MAIN CSS ----------------------------------
+*/
+body
+{
+	color: var(--orange);
+	overflow: hidden;
+	overflow-y: auto;
+	background: var(--black);
+	scroll-behavior: smooth;
+}
+main
+{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+/*
+	HEADER CSSS -------------------------------
+*/
+header
+{
+	padding-top: 3rem;
+	display: flex;
+	min-height: 70vh;
+}
+.left
+{
+	writing-mode: vertical-lr;
+}
+h1
+{
+	padding:1rem;
+	font:normal 5rem 'verdana';
+	color:var(--white);
+}
+.right
+{
+	padding-left: 1rem;
+}
+h2
+{
+	padding:2rem;
+	font-size: 3rem;
+	color: var(--gray) ;
+}
+h4
+{
+	padding:2rem;
+	font:normal 18px 'arial';
+	color:var(--yellow);
+}
+b
+{
+	font-weight:normal;
+	color:var(--white);
+}
+#front_btn
+{
+	margin: 1rem 2rem;
+	color:var(--orange);
+	background: transparent;
+	border: 2px outset var(--yellow);
+}
+#front_btn:hover
+{
+	border-style: inset;
+}
+/*
+	ASIDE CSS ----------------------------
+*/
+aside
+{
+	display: grid;
+	grid-gap: 1rem;
+	width: 40px;
+	position: fixed;
+	top:20vh;
+	left:0;
+}
+.media
+{
+	background: var(--orange);
+	border-radius: 0 5px 5px 0;
+}
+.media:hover
+{
+	background: #7f8fa6;
+}
+.icon
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+/*
+	FOOTER CSSS --------------------------------
+*/
+footer
+{
+	padding: 2rem 1rem;
+	color:var(--white);
+	text-align: center;
+	font-weight: bold;
+	border: 2px solid var(--yellow);
+	border-radius: 5rem 5rem 0 0;
+}
+footer > a
+{
+	line-height: 25px;
+	color:#fefefe;
+}
+/*
+	DEATILS CSS --------------------------------
+*/
+details
+{
+	margin: 2rem auto;
+	width: 100%;
+	color:var(--black);
+}
+summary
+{
+	padding: 1rem;
+	/* list-style: ; */
+	font-weight: bold;
+	background:var(--yellow);
+}
+section
+{
+	margin: 1rem auto;
+	font-size: 1rem;
+}
+section div
+{
+	padding: 1rem;
+	color: var(--white);
+}
+/*
+	CONTENT CSS ----------------------------------
+*/
+#content
+{
+	padding-top: 3vh;
+}
+#note
+{
+	padding:3rem 0;
+}
+.btn
+{
+	display: inline-block;
+	padding: 0.5rem 3rem;
+	font: bold 18px 'calibri';
+	color:var(--black);
+	background: var(--orange);
+	border-radius: 5px;
+}
+.btn:hover
+{
+	background: var(--yellow);
+}
+/*
+	MATH | RELATION | MONEY | GAME CSS
+*/
+#content :is(#math , #relation, #money, #game) section
+{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+#content :is(#math , #relation, #money) section div
+{
+	border:1px solid var(--gray);
+}
+/*
+	GRAPHIC | WORK CSS
+*/
+#content :is(#work , #graphic, #hindi, #linear) section
+{
+	text-align: center;
+	font-size: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+#content :is(#work, #hindi, #linear) section div:hover
+{
+	color:var(--orange);
+	cursor:copy;
+}
+/*
+	MORE LIST CSS ===================================
+*/
+#header
+{
+	display: grid;
+}
+#header div
+{
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+h3
+{
+	font-weight: normal;
+}
+.back_btn
+{
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	color:var(--black);
+	font-size: 1.5rem;
+	background: var(--white);
+	border-radius: 50%;
+}
+.back_btn:hover
+{
+	color: var(--white);
+	background: var(--orange);
+}
+#more_code
+{
+	padding:2rem 1rem;
+	display: grid;
+	grid-template-columns: repeat(10 ,1fr);
+}
+#more_code div
+{
+	padding:1rem;
+	text-align: center;
+	font:bold 18px 'arial';
+	color:var(--black);
+	background: var(--white);
+	border:1px solid var(--black);
+}
+#more_code div:hover
+{
+	color:var(--yellow);
+	background: var(--black);
+}
+/*
+	------------------
+	| RESPONSIVE CSS | ==============================
+	------------------
+*/
+@media (max-width: 1200px)
+{
+	/* .... */
+}
+/*
+    992PX SCREEN CSS ---------------------------------
+*/
+@media (max-width: 992px)
+{
+	/* GRAPHIC WORK */
+	#content :is(#work , #graphic, #hindi, #linear) section, #more_code
+	{
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+/*
+    768PX SCREEN CSS --------------------------------
+*/
+@media (max-width: 768px)
+{
+	/* MAIN */
+	body
+	{
+		position: relative;
+	}
+	main
+	{
+		width: 90%;
+	}
+	/* HEADER */
+	header
+	{
+		display: grid;
+	}
+	.left
+	{
+		writing-mode: horizontal-tb;
+	}
+	h1
+	{
+		padding: 1rem;
+	}
+	/* ASIDE */
+	aside
+	{
+		grid-template-columns: repeat(4,30px);
+		position: static;
+		margin:1rem 4rem;
+	}
+	.media
+	{
+		background: var(--orange);
+		border-radius: 5px;
+	}
+	/* MATH | RELATION | MONEY | GAME */
+	#content :is(#math , #relation, #money, #game) section
+	{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+/*
+    576PX SCREEN CSS -------------------------------
+*/
+@media (max-width: 576px)
+{
+	/* HEADER */
+	header
+	{
+		padding-top: 0;
+	}
+	h1
+	{
+		font-size: 3rem;
+	}
+	h2
+	{
+		font-size: 2rem;
+	}
+	h4, h2, h1
+	{
+		padding:2rem 1rem;
+	}
+	#front_btn
+	{
+		margin:1rem;
+	}
+	/* ASIDE */
+	aside
+	{
+		margin:1.5rem;
+	}
+	.right
+	{
+		padding:0;
+	}
+	/* GRAPHIC | WORK */
+	#content :is(#work , #graphic, #hindi, #linear) section, #more_code
+	{
+		grid-template-columns: repeat(4,1fr);
+	}
+	/* FOOTER */
+	footer
+	{
+		font-weight: normal;
+		border-radius: 2rem 2rem 0 0;
+	}
+}
+/*
+    300PX SCREEN CSS -----------------------------
+*/
+@media (max-width: 375px)
+{
+	/* MAIN */
+	main
+	{
+		width: 95%;
+	}
+}
+/*
+	THE END ==================================
+*/

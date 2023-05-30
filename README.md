@@ -38,7 +38,7 @@
 
 ### Responsive
 
-**Breakpoints** { 375 | 576 | 768 | 992 }
+  Breakpoints { 375 | 576 | 768 | 992 }
 
 ### Theme
 

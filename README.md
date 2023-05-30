@@ -8,7 +8,7 @@
 
 - Update : 30-05-2023
 
-- Status : Reset
+- Status : Rest
 
 - Responsive : Ture
 

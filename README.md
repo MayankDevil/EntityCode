@@ -42,7 +42,7 @@
 
 ### Theme
 
-_ Dark Theme with Orange | Yellow | Gray - White give very nice look to website._
+_Dark Theme with Orange | Yellow | Gray - White give very nice look to website_
 
 ### PreLoader
 

@@ -36,14 +36,14 @@
 
 ![Alt text](./data/EntityCode.png "HomePage")
 
-## Responsive
+### Responsive
 
 **Breakpoints** { 375 | 576 | 768 | 992 }
 
-## Theme
+### Theme
 
 _Dark Theme with Orange | Yellow | Gray - White give very nice look to website_
 
-## PreLoader
+### PreLoader
 
 _it website add pre loader that loader before and it create by code not image_

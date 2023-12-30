@@ -1,22 +1,22 @@
-# Website 8
+# title
 
 - Name : "Entity Code"
 
-- Description : "give code of entity code that you are use in webpage"
+- Description : "A Comprehensive Guide to Special Characters on Webpage"
 
-- Version : 8.3
+- Version : main
 
-- Update : 30-05-2023
+- Update : 30-12-2023
 
-- Status : Rest
+- Status : REST
 
-- Responsive : True
+- Responsive : Ture
 
 - TecStack : { HTML | CSS | JavaScript }
 
-- Thanks : { VSCode | GitHub }
+- Thanks : { VSCodium | GitHub | GIMP }
 
-- Work : Self Group
+- Work : Self
 
 - Design : { Mayank }
 
@@ -24,11 +24,11 @@
 
 - CopyRight : { Mayank }
 
-- URL : https://mayankdevil.github.io/website-8/
+- URL : https://mayankdevil.github.io/EntityCode/
 
-- Clone : https://github.com/MayankDevil/website-8.git
+- Clone : https://github.com/MayankDevil/EntityCode.git
 
-- Download : https://github.com/MayankDevil/website-8/archive/refs/heads/main.zip
+- Download : https://github.com/MayankDevil/EntityCode/archive/refs/heads/main.zip
 
 ---
 
@@ -38,12 +38,13 @@
 
 ### Responsive
 
-  Breakpoints { 375 | 576 | 768 | 992 }
+**Breakpoints** { 375 | 576 | 768 | 992 }
 
 ### Theme
 
-_Dark Theme with Orange | Yellow | Gray - White give very nice look to website_
+_Dark Theme with Orange | Yellow | Gray - White give very nice look to website._
 
 ### PreLoader
 
 _it website add pre loader that loader before and it create by code not image_
+

@@ -228,6 +228,10 @@ try
             "127803","127804","127807","127808","127809","127810"
         ];
     // finsh =============================================
+
+    let characters = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+
+    var code = characters.toLowerCase() + characters.toUpperCase()
 }
 catch(error)
 {

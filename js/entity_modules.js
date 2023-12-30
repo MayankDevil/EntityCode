@@ -13,18 +13,13 @@ try
     */
     class Entity
     {
-        /*
-            ----------------------------------------------------
-            | Print Method } return perameter to document write
-            ----------------------------------------------------
-        */ 
-        print(message)
+        constructor(characters)
         {
-            document.write("<div id='note'>"+message+"</div>");
-        }
+            code = characters
+        }   
         /*
             ----------------------------------------
-            | COPY METHOD : use to copy entity code
+            | COPY METHOD | use to copy entity code
             ----------------------------------------
         */
         copy_method(element)
@@ -32,10 +27,14 @@ try
             element.select();
             document.execCommand("Copy");
         }
+
         /*
-            display 1 method
+            -------------------------------------------------------------------------------------
+            | COMMANLY USE | return comman useful entity code by fetch data
+            -------------------------------------------------------------------------------------
         */
-        display1()
+        
+        comman_entity_code()
         {
             document.write("<details id='work' open='open'> <summary> Working Entity Code </summary> <section>");
 
@@ -47,10 +46,14 @@ try
             });
             document.write("</section> </details>");
         }
+
         /*
-            display 2 method
+            -------------------------------------------------------------------------------------
+            | GRAPHIC | return graphic entity code by fetch data
+            -------------------------------------------------------------------------------------
         */
-        display2()
+        
+        graphic_entity_code()
         {
             document.write("<details id='graphic'> <summary> Graphics Entity Code </summary> <section>");
     
@@ -62,10 +65,14 @@ try
             });
             document.write("</section> </details>");
         }
+        
         /*
-            display 3 method
+            -------------------------------------------------------------------------------------
+            | MATHEMATICS | return mathmetical characters or symbols
+            -------------------------------------------------------------------------------------
         */
-        display3()
+
+        mathematics_entity_code()
         {
             document.write("<details id='math' open='open'> <summary> Mathmatics Entity Code </summary> <section>");
 
@@ -78,10 +85,14 @@ try
             }
             document.write("</section> </details>");
         }
+
         /*
-            display 4 method
+            -------------------------------------------------------------------------------------
+            | RELATION | return relational entity
+            -------------------------------------------------------------------------------------
         */
-        display4()
+
+        relation_entity_code()
         {
             document.write("<details id='relation'> <summary> Relational Entity Code </summary> <section>");
 
@@ -94,12 +105,16 @@ try
             }
             document.write("</section> </details>");
         }
+
         /*
-            display 5 method
+            -------------------------------------------------------------------------------------
+            | CURRENCY | return different country currency symbols
+            -------------------------------------------------------------------------------------
         */
-        display5()
+
+        currency_entity_code()
         {
-            document.write("<details id='money'> <summary> Money Entity Code </summary> <section>");
+            document.write("<details id='money'> <summary> Currency Entity Code </summary> <section>");
 
             for(var i = 0; i<money.length; i++)
             {
@@ -110,12 +125,16 @@ try
             }
             document.write("</section> </details>");
         }
+
         /*
-            display 6 method
+            -------------------------------------------------------------------------------------
+            | GAME | return chess or card symbols
+            -------------------------------------------------------------------------------------
         */
-        display6()
+
+        game_entity_code()
         {
-            document.write("<details id='game'> <summary> Game Charator Entity Code </summary> <section>");
+            document.write("<details id='game'> <summary> Game Entity Code </summary> <section>");
 
             for(var i = 0; i<game.length; i++)
             {
@@ -126,12 +145,16 @@ try
             }
             document.write("</section> </details>");
         }
+
         /*
-            display 7 method
+            -------------------------------------------------------------------------------------
+            | HINDI CHARACTERS : return indian character code
+            -------------------------------------------------------------------------------------
         */
-        display7()
+
+        hindi_character()
         {
-            document.write("<details id='hindi'> <summary> Hindi Charator Entity Code </summary> <section>");
+            document.write("<details id='hindi'> <summary> Hindi Character Entity Code </summary> <section>");
 
             for(var i=2308; i<2418; i++)
             {
@@ -144,12 +167,16 @@ try
             }
             document.write("</section> </details>");
         }
+
         /*
-            display 8 method
+            -------------------------------------------------------------------------------------
+            | LINEAR : return comman encrypted entity code
+            -------------------------------------------------------------------------------------
         */
-        display8()
+
+        linear_character()
         {
-            document.write("<details id='linear'> <summary> Linear Charactor Entity Code </summary> <section>");
+            document.write("<details id='linear'> <summary> Linear Characters Entity Code </summary> <section>");
 
             for(var i = 19904; i < 19967; i++)
             {
@@ -159,13 +186,74 @@ try
             }
             document.write("</section> </details>");
         }
+
+        /*
+            -------------------------------------------------------------------------------------
+            | SCR CHARACTER : return scr entity code
+            -------------------------------------------------------------------------------------
+        */
+
+        scr_character()
+        {
+            document.write("<details id='fr'> <summary>  SCR Entity Code </summary> <section>");
+                        
+            for (var i = 0; i < code.length; i++)
+            {
+                const letter = code[i]
+                document.write(`<div id='id${letter}fr'> &${letter}scr; </div>`);
+                
+                document.getElementById(`id${letter}fr`).onclick = () => alert(`&${letter}fr;`);		
+            }
+            document.write("</section> </details>"); 
+        }
+
+        /*
+            -------------------------------------------------------------------------------------
+            | FR CHARACTER : return fr entity code
+            -------------------------------------------------------------------------------------
+        */
+
+        fr_character()
+        {
+            document.write("<details id='fr'> <summary>  FR Entity Code </summary> <section>");
+                        
+            for (var i = 0; i < code.length; i++)
+            {
+                const letter = code[i]
+                
+                document.write(`<div id='id${letter}fr'> &${letter}fr; </div>`);
+                
+                document.getElementById(`id${letter}fr`).onclick = () => alert(`&${letter}fr;`);		
+            }
+            document.write("</section> </details>"); 
+        }
+
+        /*
+            -------------------------------------------------------------------------------------
+            | OPF CHARACTER : return opf entity code
+            -------------------------------------------------------------------------------------
+        */
+
+        opf_character()
+        {
+            document.write("<details id='opf'> <summary>  OPF Entity Code </summary> <section>");
+                        
+            for (var i = 0; i < code.length; i++)
+            {
+                const letter = code[i]
+
+                document.write(`<div id='id${letter}opf'> &${letter}opf; </div>`);
+                
+                document.getElementById(`id${letter}opf`).onclick = () => alert(`&${letter}opf;`);		
+            }
+            document.write("</section> </details>"); 
+        }
     }
     /*
-        --------------------------------------------------
-        [ OBJECT ] entity class object important variable
-        --------------------------------------------------
+        
+        [ object of Entity class ] ===============================================================
     */ 
-    var data = new Entity();
+    var data = new Entity(code);
 }
 catch(error)
 {

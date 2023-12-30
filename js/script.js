@@ -43,9 +43,14 @@ try
 
         main.style.display = ""
     }
+
+    
+   
+            
+    
 }
 catch(error)
 {
-    alert(console.error(error));
+   console.log(`${error}`)
 }
 // the end

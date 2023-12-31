@@ -16,6 +16,7 @@
 	outline: none;
 	box-sizing: border-box;
 }
+/* default color theme */
 :root
 {
 	--black:#222f3e;
@@ -23,6 +24,17 @@
 	--yellow:#feca57;
 	--orange:#ff9f43;
 	--white:#ecf0f1;
+	--light:#fff;
+}
+/* light color theme */
+.light_theme
+{
+	--white:#222f3e;
+	--gray:#7f8fa6;
+	--orange:#feca57;
+	--yellow:#222f3e;
+	--orange:#ff9f43;
+	--black:#ecf0f1;
 	--light:#fff;
 }
 ::-webkit-scrollbar
@@ -37,7 +49,7 @@
 }
 ::marker
 {
-	color:black;
+	color:var(--black);
 }
 /*
 	MAIN CSS ----------------------------------
@@ -100,14 +112,14 @@ b
 	font-weight:bold;
 	color:var(--white);
 }
-#front_btn
+#theme_btn
 {
 	margin: 1rem 2rem;
 	color:var(--orange);
 	background: transparent;
 	border: 2px outset var(--yellow);
 }
-#front_btn:hover
+#theme_btn:hover
 {
 	border-style: inset;
 }
@@ -199,7 +211,7 @@ section div
 {
 	display: inline-block;
     margin:3rem auto;
-	padding: 0.5rem 2rem;
+	padding: 0.5rem 1rem;
 	font-size:1rem;
 	font-weight:bold;
 	color:var(--black);
@@ -244,34 +256,31 @@ section div
 {
 	display: grid;
 }
-#header div
+.secondary_header
 {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
-h3
+.secondary_header h2
 {
-	font-weight: normal;
+	padding: 0;
 }
-.back_btn
+.secondary_header .btn
 {
-	display: inline-block;
-	padding: 0.5rem 1rem;
-	color:var(--black);
-	font-size: 1.5rem;
-	background: var(--white);
-	border-radius: 50%;
+	margin: 2rem auto;
 }
-.back_btn:hover
+.secondary_header .btn:last-child
 {
-	color: var(--white);
-	background: var(--orange);
+	margin-left:1rem;
+	padding: 0.5rem;
+	border-radius: 0;
 }
 #more_code
 {
-	padding:2rem 1rem;
+	padding:2rem 0;
 	display: grid;
 	grid-template-columns: repeat(10 ,1fr);
 }
@@ -281,9 +290,8 @@ h3
 	text-align: center;
 	font-weight: bolder;
 	font-size:1rem;
-	color:var(--black);
-	background: var(--white);
-	border:1px solid var(--black);
+	color:var(--gray);
+	border:1px solid var(--gray);
 }
 #more_code div:hover
 {
@@ -400,6 +408,12 @@ h3
 	{
 		font-weight: normal;
 		border-radius: 2rem 2rem 0 0;
+	}
+	/* MORECODE */
+	#more_code
+	{
+		padding:0;
+		padding-bottom: 2rem;
 	}
 }
 /*

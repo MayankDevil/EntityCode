@@ -142,7 +142,8 @@ aside
 }
 .media:hover
 {
-	background: #7f8fa6;
+	background:var(--yellow);
+	transform: scale(1.2);
 }
 .icon
 {

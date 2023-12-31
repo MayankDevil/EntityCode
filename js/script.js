@@ -15,7 +15,7 @@ try
 
     let loader = document.createElement('div')
 
-    // main.style.display = "none"
+    main.style.display = "none"
         
     loader.style.color = "#ff9f43"
     
@@ -31,6 +31,10 @@ try
     
     document.body.append(loader)
 
+    /*
+        [ on window load function ]============================================================
+    */ 
+
     window.onload = () => {
 
         clearInterval(oneSecond)
@@ -43,14 +47,17 @@ try
 
         main.style.display = ""
 
+        /*
+            -------------------------------------------------------------------
+            | Theme function | onclick add light theme scheme else remove 
+            -------------------------------------------------------------------
+        */ 
+
         document.getElementById('theme_btn').onclick = function()
         {
             document.body.classList.toggle('light_theme')
         }
     }
-
-    
-    
 }
 catch(error)
 {

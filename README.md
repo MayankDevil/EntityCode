@@ -42,7 +42,7 @@
 
 ### Theme
 
-_Dark Theme with Orange | Yellow | Gray - White give very nice look to website._
+_This website offers both dark and light modes, with a color scheme that includes shades of orange, yellow, and gray._
 
 ### PreLoader
 

@@ -1,8 +1,8 @@
 /*
 -	website-8 "Entity Code"
--	CopyRight Mayank All Right Rserved 
+-	CopyRight https://github.com/MayankDevil/ 
 -	Developed and Desgin by Mayank
--	JavaScript : js/entity_data
+-	JavaScript : ./js/entity_data.js
 */
 try
 {

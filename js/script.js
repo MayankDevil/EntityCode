@@ -42,11 +42,14 @@ try
         loader.remove
 
         main.style.display = ""
+
+        document.getElementById('theme_btn').onclick = function()
+        {
+            document.body.classList.toggle('light_theme')
+        }
     }
 
     
-   
-            
     
 }
 catch(error)

@@ -195,14 +195,14 @@ try
 
         scr_character()
         {
-            document.write("<details id='fr'> <summary>  SCR Entity Code </summary> <section>");
+            document.write("<details id='scr'> <summary>  SCR Entity Code </summary> <section>");
                         
             for (var i = 0; i < code.length; i++)
             {
                 const letter = code[i]
-                document.write(`<div id='id${letter}fr'> &${letter}scr; </div>`);
+                document.write(`<div id='id${letter}scr'> &${letter}scr; </div>`);
                 
-                document.getElementById(`id${letter}fr`).onclick = () => alert(`&${letter}fr;`);		
+                document.getElementById(`id${letter}scr`).onclick = () => alert(`&${letter}scr;`);		
             }
             document.write("</section> </details>"); 
         }

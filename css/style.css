@@ -238,7 +238,7 @@ section div
 /*
 	GRAPHIC | WORK CSS
 */
-#content :is(#work , #graphic, #hindi, #linear, #fr, #opf) section
+#content :is(#work , #graphic, #hindi, #linear, #fr, #opf, #scr) section
 {
 	text-align: center;
 	font-size: 1.5rem;
@@ -314,7 +314,7 @@ section div
 @media (max-width: 992px)
 {
 	/* GRAPHIC WORK */
-	#content :is(#work , #graphic, #hindi, #linear) section, #more_code
+	#content :is(#work , #graphic, #hindi, #linear, #fr, #opf, #scr) section, #more_code
 	{
 		grid-template-columns: repeat(6, 1fr);
 	}
@@ -400,7 +400,7 @@ section div
 		padding:0;
 	}
 	/* GRAPHIC | WORK */
-	#content :is(#work , #graphic, #hindi, #linear) section, #more_code
+	#content :is(#work , #graphic, #hindi, #linear, #fr, #opf, #scr) section, #more_code
 	{
 		grid-template-columns: repeat(4,1fr);
 	}

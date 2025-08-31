@@ -1,0 +1,31 @@
+{
+  "name": "entitycode",
+  "version": "2.0.0",
+  "description": "Entity Code is a comprehensive guide to special characters on web pages",
+  "main": "index.html",
+  "scripts": {
+    "test": "node src/js/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayankDevil/EntityCode.git"
+  },
+  "keywords": [
+    "EntityCode",
+    "Entity",
+    "Special",
+    "Character",
+    "Web",
+    "Characters",
+    "Entity",
+    "Characters",
+    "HTML",
+    "ICON"
+  ],
+  "author": "Mayank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayankDevil/EntityCode/issues"
+  },
+  "homepage": "https://github.com/MayankDevil/EntityCode#readme"
+}

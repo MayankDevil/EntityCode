@@ -1,50 +1,22 @@
-# website-8
+# Entity Code  
 
-- Name : "Entity Code"
+_Entity Code is a comprehensive guide to special characters on web pages. It allows developers and learners to quickly find, copy, and use HTML entities, making content more accessible and professional._  
 
-- Description : "A Comprehensive Guide to Special Characters on Webpage"
+![EntityCode Home](./public/img/EntityCode.png "EntityCode Home")  
 
-- Version : main
-
-- Update : 30-12-2023
-
-- Status : REST
-
-- Responsive : Ture
-
-- TecStack : { HTML | CSS | JavaScript }
-
-- Thanks : { VSCodium | GitHub | GIMP }
-
-- Work : Self
-
-- Design : { Mayank }
-
-- Developer : { Mayank }
-
-- CopyRight : { Mayank }
-
-- URL : https://mayankdevil.github.io/EntityCode/
-
-- Clone : https://github.com/MayankDevil/EntityCode.git
-
-- Download : https://github.com/MayankDevil/EntityCode/archive/refs/heads/main.zip
+[![GitHub - MayankDevil](https://img.shields.io/badge/Visit%20Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil)  
+[![Live Website](https://img.shields.io/badge/Live%20Demo-00C853?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mayankdevil.github.io/EntityCode/)  
 
 ---
 
-### Home Page
+## ⚠️ Legal Notice  
 
-![Alt text](./data/EntityCode.png "HomePage")
+> © 2025 Mayank – **All Rights Reserved**  
+>
+> 🚫 Unauthorized use, duplication, redistribution, or modification of this project is **strictly prohibited**.  
+>
+> 🛑 Any infringement will be considered a **legal violation** and may lead to civil, financial, or criminal consequences.  
+>
+> ✅ This project is shared only for **educational and personal learning purposes**. Please respect the creativity and intellectual property behind it.  
 
-### Responsive
-
-**Breakpoints** { 375 | 576 | 768 | 992 }
-
-### Theme
-
-_This website offers both dark and light modes, with a color scheme that includes shades of orange, yellow, and gray._
-
-### PreLoader
-
-_it website add pre loader that loader before and it create by code not image_
-
+---
